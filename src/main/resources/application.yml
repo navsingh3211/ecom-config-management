@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: config-management
+  profiles:
+    active: dev
+
+build:
+  id: 111
+  version: 1.0.0
+  name: "Default-Build"
