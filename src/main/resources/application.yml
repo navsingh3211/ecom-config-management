@@ -1,13 +1,19 @@
 spring:
   application:
     name: config-management
-#  profiles:
-#    active: dev
+  profiles:
+    active: dev
 
 build:
-  id: ${ID}
-  version: ${VERSION}
-  name: "Default-Build"
+  id: 1212
+  version: 1.2.1.2
+  name: "Default-Application-Build"
+  type: "Application Build"
+
+#build:
+#  id: ${ID}
+#  version: ${VERSION}
+#  name: "Default-Build"
 
 #  BUILD_ID=62830824;BUILD_NAME=sitamahalakshmi
 #ID=4444;VERSION=1:1:1:1
