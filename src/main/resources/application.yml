@@ -1,8 +1,10 @@
 spring:
   application:
-    name: config-management
+    name: configmanagement
   profiles:
     active: dev
+  config:
+    import: configserver:http://localhost:8888
 
 build:
   id: 1212
