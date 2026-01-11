@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @AllArgsConstructor
-@RefreshScope
+@RefreshScope // to avaid downtime during config change
 public class BuildInfoController {
 
 //    @Value("${build.id:default}")
