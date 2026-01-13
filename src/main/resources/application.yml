@@ -5,6 +5,17 @@ spring:
     active: dev
   config:
     import: optional:configserver:http://localhost:8888
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,refresh,busrefresh"
 
 build:
   id: 1212
@@ -19,8 +30,10 @@ build:
 
 #  BUILD_ID=62830824;BUILD_NAME=sitamahalakshmi
 #ID=4444;VERSION=1:1:1:1
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
+
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: refresh
